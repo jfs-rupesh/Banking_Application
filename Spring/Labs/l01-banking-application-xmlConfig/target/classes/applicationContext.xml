@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns:context="http://www.springframework.org/schema/context"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+<bean name="transferBean" class="com.domain.TransferRepository.interTransfer">
+
+</bean>
+<bean name="transferService" class="com.domain.service.transferServiceImpl">
+
+<property name="transfer" ref="transferBean">
+
+</property>
+</bean>
+</beans>
